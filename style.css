@@ -1,9 +1,11 @@
 body {
-    background-color:antiquewhite;
-    margin: 0;
+    background-color: antiquewhite;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
 }
 
-div {
+div.top{
     font-family: Helvetica;
     background-color: #272D33;
     color: white;
@@ -15,15 +17,23 @@ div {
 .top {
     display: flex;
     padding: 10px;
+    letter-spacing: 2px;
+    z-index: 100;
+    background-size: cover;
 }
 
-.right {
+.right_top {
     height: 100px; 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    width: 50%;
+    width: 80%;
+    padding: 20px;
+}
+
+.right_top a {
+    color: inherit;
 }
 
 .items:hover {
@@ -58,9 +68,111 @@ div {
     padding-right: 15px;
     display: flex;
     justify-content: flex-end;
+    margin: 0;
+    border: none;
+    padding: 20px;
 }
 
-.searchbar img {
+#bar {
+    margin-right: none;
+}
+
+#button {
     max-height: 20px;
     max-width: 20px;
+    padding-left: 0px;
+    margin-left: none;
+    border: none;
+}
+
+div.home_columns {
+    background-image: linear-gradient(rgb(203, 148, 255), rgb(140, 235, 166, 1));
+    display: flex;
+    justify-content: space-between;
+    position: relative
+}
+
+.home_mid_left {
+    width: 33.33%;
+    border: 1px solid black;
+    text-align: center;
+    padding: 300px;
+    padding-top: 500px;
+    padding-bottom: 500px;
+}
+
+.home_mid_center {
+    width: 33.33%;
+    border: 1px solid black;
+    text-align: center;
+    padding: 300px;
+    padding-top: 100px;
+    padding-bottom: 500px;
+}
+
+.home_mid_right {
+    width: 33.33%;
+    border: 1px solid black;
+    text-align: center;
+    padding: 300px;
+    padding-top: 500px;
+    padding-bottom: 500px;
+}
+
+#h2_home_screen{
+    font-size: 75px;
+}
+
+#h3_home_screen{
+    font-size: 40px;
+}
+
+#p_home_screen{
+    font-size: 18px;
+}
+
+div.about_columns {
+    background-image: linear-gradient(rgb(203, 148, 255), rgb(140, 235, 166, 1));
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.about_mid_left {
+    width: 33.33%;
+    border: 1px solid black;
+    text-align: center;
+    padding: 300px;
+    padding-top: 500px;
+    padding-bottom: 500px;
+}
+
+.about_mid_center {
+    width: 33.33%;
+    border: 1px solid black;
+    text-align: center;
+    padding: 300px;
+    padding-top: 100px;
+    padding-bottom: 500px;
+}
+
+.about_mid_right {
+    width: 33.33%;
+    border: 1px solid black;
+    text-align: center;
+    padding: 300px;
+    padding-top: 500px;
+    padding-bottom: 500px;
+}
+
+#h2_about_screen{
+    font-size: 75px;
+}
+
+#h3_about_screen{
+    font-size: 40px;
+}
+
+#p_about_screen{
+    font-size: 18px;
 }
